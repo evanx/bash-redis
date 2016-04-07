@@ -51,7 +51,6 @@ debug 'testing debug'
 info 'testing info'
 warn 'testing warn'
 error 'testing error'
-abort 'testing abort'
 
 help
 
@@ -62,6 +61,8 @@ c1llen() { # key
 }
 
 command $@
+
+abort 'testing abort'
 ```
 where we use `command` to handle command-line parameters.
 
