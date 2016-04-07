@@ -40,14 +40,21 @@ Note that to use this util, we <b>must</b> `set -e` i.e. error on exit, i.e. any
 
 ### Demo
 
+See: https://github.com/evanx/bash-redis/blob/master/demo.sh
+
+
 ```shell
+# context
+
 loggerName=`basename $0 .sh`
 loggerLevel=debug
 redisCli="redis-cli -h localhost -n 0"
 
 . ~/bash-redis/util.sh $0
 
-debug $redisCli
+debug redisCli $redisCli
+
+# testing
 
 debug 'testing debug'
 info 'testing info'
@@ -62,7 +69,10 @@ c1llen() { # key
   echo "llen $1" `llen $1`
 }
 
-command $@
+
+# call custom command
+
+command $@ || help
 
 abort 'testing abort'
 ```
