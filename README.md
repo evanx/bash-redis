@@ -69,7 +69,7 @@ The first parameter is the "command" e.g. `llen` with 1 parameter, will call `c1
 
 <img src='http://evanx.github.io/images/bash-redis/bash-redis.png' alt='script output'>
 
-Notice that we color and style the logging messages e.g. `ERROR` is bold red.
+Notice that we colorify logging messages e.g. `ERROR` is red.
 
 Note that we <b>must</b> execute the script with `bash` rather than `sh.`
 
