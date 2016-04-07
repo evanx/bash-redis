@@ -241,13 +241,15 @@ hgetd() {
 help() {
    if [ -n "$scriptFile" ]
    then
-      cat $scriptFile | grep ^c[0-9] | sed 's/^c\([0-9]\)\(\w*\)() {\s*[\W#]*\s*\(.*\)$/\2 \1 \3/' | sort
+      echo "commands:"
+      cat $scriptFile | grep ^c[0-9] | sed 's/^c\([0-9]\)\(\w*\)() {\s*[\W#]*\s*\(.*\)$/  \2 (\1 args: \3)/' | sort
    else
       warn "no command"
    fi
 }
 
 command() {
+   debug "command: $# $@"
    if [ $# -ge 1 ]
    then
       command=$1

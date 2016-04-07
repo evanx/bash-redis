@@ -22,12 +22,11 @@ c1llen() { # key
   echo "llen $1" `llen $1`
 }
 
-command $@
-
 debug 'testing logging debug'
 info 'testing info'
 warn 'testing warn'
 error 'testing error'
-abort 'testing abort'
 
-help
+command "$@" || help 
+
+abort 'testing abort'

@@ -1,7 +1,7 @@
 
 ## bash-redis
 
-A bash util script for Redis.
+A bash util script for Redis. It also includes logging.
 
 ### Status
 
@@ -9,6 +9,8 @@ UNSTABLE
 
 
 ### Implementation
+
+See: https://github.com/evanx/bash-redis/blob/master/util.sh
 
 
 ### Installation
