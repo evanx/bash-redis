@@ -67,7 +67,7 @@ where we use `command` to handle command-line parameters.
 
 The first parameter is the "command" e.g. `llen` with 1 parameter, will call `c1llen`
 
-```shell
+```
 evans@eowyn:~/bash-redis$ bash scripts/demo.sh llen test:list
 DEBUG redis-cli -h localhost -n 0
 DEBUG redis llen test:list - 1
