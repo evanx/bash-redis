@@ -21,8 +21,18 @@ git clone https://github.com/evanx/bash-redis
 
 You can include this as follows:
 ```shell
+set -u -e
+
+loggerName=`basename $0 .sh`
+loggerLevel=debug
+redisCli="redis-cli -h localhost -n 0"
+
 . ~/bash-redis/util.sh
 ```
+where we set `redisCli` et al.
+
+The util script also includes logging, for which we specify `loggerName` and `loggerLevel` e.g. `debug`
+
 
 ### Demo
 
