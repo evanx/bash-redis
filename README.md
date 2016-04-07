@@ -33,7 +33,7 @@ where we set `redisCli` et al.
 
 The util script also includes logging, for which we specify `loggerName` and `loggerLevel` e.g. `debug`
 
-Note that to use this util, we <b>must</b> `set -e` i.e. error on exit, i.e. any command that returns nonzero (that is not checked with `if`)
+Note that to use this util, we <b>must</b> `set -e` i.e. error on exit, i.e. any command that returns nonzero, that is not checked using an `if` statement.
 
 
 ### Demo
