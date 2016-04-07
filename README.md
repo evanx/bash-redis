@@ -67,20 +67,12 @@ where we use `command` to handle command-line parameters.
 
 The first parameter is the "command" e.g. `llen` with 1 parameter, will call `c1llen`
 
-```
-evans@eowyn:~/bash-redis$ bash scripts/demo.sh llen test:list
-DEBUG redis-cli -h localhost -n 0
-DEBUG redis llen test:list - 1
-llen test:list 1
-DEBUG testing logging debug
-INFO  testing info
-WARN  testing warn
-ERROR testing error
-ABORT testing abort
-```
-where we <b>must</b> execute the script with `bash` rather than `sh.`
+<img src='' alt='script output'>
 
-Actually in the terminal, we color and style the logging messages e.g. `ERROR` is bold red.
+Notice that we color and style the logging messages e.g. `ERROR` is bold red.
+
+Note that we <b>must</b> execute the script with `bash` rather than `sh.`
+
 
 ### Related
 
