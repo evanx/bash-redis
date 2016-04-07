@@ -5,7 +5,7 @@ then
    then
       scriptFile=$1
    else
-      scriptFile=$PWD$1
+      scriptFile=$PWD/$1
    fi
 fi
 

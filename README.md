@@ -33,7 +33,7 @@ where we set `redisCli` et al.
 
 The util script also includes logging, for which we specify `loggerName` and `loggerLevel` e.g. `debug`
 
-Note that to use this util, we must `set -e` i.e. error on exit, i.e. any command that returns nonzero (that is not checked with `if`)
+Note that to use this util, we <b>must</b> `set -e` i.e. error on exit, i.e. any command that returns nonzero (that is not checked with `if`)
 
 
 ### Demo
@@ -78,6 +78,8 @@ WARN  testing warn
 ERROR testing error
 ABORT testing abort
 ```
+where we <b>must</b> execute the script with `bash` rather than `sh.`
+
 Actually in the terminal, we color and style the logging messages e.g. `ERROR` is bold red.
 
 ### Related
