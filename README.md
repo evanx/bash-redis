@@ -67,7 +67,7 @@ where we use `command` to handle command-line parameters.
 
 The first parameter is the "command" e.g. `llen` with 1 parameter, will call `c1llen`
 
-<img src='' alt='script output'>
+<img src='http://evanx.github.io/images/bash-redis/bash-redis.png' alt='script output'>
 
 Notice that we color and style the logging messages e.g. `ERROR` is bold red.
 
